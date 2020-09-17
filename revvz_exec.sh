@@ -20,9 +20,6 @@ echo 60 > /proc/sys/vm/vfs_cache_pressure
 echo 85 > /proc/sys/vm/swappiness
 echo 3600 > /proc/sys/vm/stat_interval
 
-#Misc changes
-sysctl -w net.ipv4.tcp_congestion_control=westwood
-
 #Uclamp changes (reduces jitter,apparently)
 
 #system-wide
