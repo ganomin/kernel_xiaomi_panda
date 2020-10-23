@@ -151,7 +151,7 @@ Commit: \`$COMMIT_POINT\`
 
 Changelog [Here!]($CHANGELOG)
 
-Kernel: \`Sleepy\`"
+Kernel: \`Panda\`"
 }
 
 if [ "$(whoami)" = "lacia" ] || [ "$(whoami)" = "lacia-chan" ]; then
