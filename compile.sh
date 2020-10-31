@@ -173,7 +173,7 @@ build_clang() {
         CROSS_COMPILE=aarch64-linux-gnu-
 }
 
-make O=out ARCH=arm64 sleepy_defconfig
+make O=out ARCH=arm64 daisy_defconfig
 build_clang
 
 # Calculate how long compiling compiling the kernel took
