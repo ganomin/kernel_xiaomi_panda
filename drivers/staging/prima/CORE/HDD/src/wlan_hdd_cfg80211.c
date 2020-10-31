@@ -6114,14 +6114,6 @@ __wlan_hdd_cfg80211_get_supported_features(struct wiphy *wiphy,
     fset |= WIFI_FEATURE_AP_STA;
 #endif
 
-#ifdef FEATURE_WLAN_LFR
-    if (pHddCtx->cfg_ini->bssid_blacklist_timeout &&
-        sme_IsFeatureSupportedByFW(BSSID_BLACKLIST)) {
-        fset |= WIFI_FEATURE_CONTROL_ROAMING;
-        hddLog(LOG1, FL("CONTROL_ROAMING supported by driver"));
-    }
-#endif
-
 #ifdef WLAN_FEATURE_LINK_LAYER_STATS
    if ((TRUE == pHddCtx->cfg_ini->fEnableLLStats) &&
        (TRUE == sme_IsFeatureSupportedByFW(LINK_LAYER_STATS_MEAS))) {
